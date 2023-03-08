@@ -1,0 +1,53 @@
+.card-container {
+    max-height: 20rem;
+    background-color: #f8f9fa;
+    margin: .2rem 0.5rem 0.3rem 0rem;
+    padding:.6rem;
+    position:relative;
+    cursor: pointer;
+    color:black;
+}
+
+.card-container>header, section {
+    padding: 0.2rem 0.4rem;
+    word-wrap: break-word;
+}
+
+.card-container > header{
+    cursor: default;
+}
+
+.card-container>header>div{
+    cursor: pointer;
+}
+
+.card-container>header>span{
+   line-height: 19px;
+}
+.card-container > section > span{
+    margin:0.1rem 0rem;
+}
+
+#options-container {
+    width: fit-content;
+    height: auto;
+    background-color: aliceblue;
+    position: absolute;
+    font-size: small;
+    right:0;
+    z-index: 10;
+}
+
+#options-container>div {
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border: 1px;
+}
+
+#options-container>div:hover {
+    background-color: lavender;
+}
+
+#options-container>div>span {
+    margin: 0rem 0.3rem;
+}

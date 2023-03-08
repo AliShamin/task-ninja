@@ -1,0 +1,11 @@
+.footer-box {
+    height: 14px;
+    width: 100%;
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0px;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+

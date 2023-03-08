@@ -1,0 +1,9 @@
+.empty-bucket-container{
+    width: 100vw;
+    height: 70vh;
+}
+
+.empty-bucket-container>div{
+    opacity: 0.6;
+    height: 100%;
+}

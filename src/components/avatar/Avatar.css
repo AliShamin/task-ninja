@@ -1,0 +1,23 @@
+
+#avatar-container>span{
+    width:7rem;
+    font-weight: 500;
+    color:black;
+}
+#avatar-input-container{
+    width:10rem;
+    background-color: aliceblue;
+    position: absolute;
+    top:43px;
+    padding: .5rem;
+    z-index: 10;
+}
+#avatar-input{
+    margin: 0.5rem 0rem;
+    height: auto;
+    width:90%;
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
