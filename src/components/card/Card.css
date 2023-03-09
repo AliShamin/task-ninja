@@ -1,11 +1,12 @@
 .card-container {
     max-height: 20rem;
-    background-color:  var(--mainColor);
+    background-color:  var(--secondaryColor);
     margin: .2rem 0.5rem 0.3rem 0rem;
     padding:.6rem;
     position:relative;
     cursor: pointer;
     color:black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card-container>header, section {

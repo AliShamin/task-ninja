@@ -1,5 +1,6 @@
 :root {
-  --mainColor: #F4F9F9;
+  --primaryColor:#FFF4E9;
+  --secondaryColor: aliceblue;
 }
 
 ::-webkit-scrollbar {

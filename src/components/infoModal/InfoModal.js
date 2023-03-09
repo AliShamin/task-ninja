@@ -39,6 +39,8 @@ function InfoModal() {
                                 <li><b>Most/Least</b> recently created</li>
                                 <p>We can also sort the tickets based on the creation date so that we can see the most and least recently created tickets easily.</p>
                             </ul>
+                            <li>Dark Mode</li>
+                            <p>With this feature we can switch between light and dark mode.</p>
 
                         </ul>
                         <h3>Where your data will be stored ?</h3>
