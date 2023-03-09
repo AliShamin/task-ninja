@@ -2,7 +2,7 @@
     width: 44%;
     height: auto;
     max-height: 75%;
-    background-color: #f8f9fa;
+    background-color:  var(--mainColor);
     top:12%;
     overflow: auto;
     overflow-x: hidden;

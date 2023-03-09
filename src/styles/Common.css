@@ -1,3 +1,7 @@
+:root {
+  --mainColor: #F4F9F9;
+}
+
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;

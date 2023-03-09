@@ -1,7 +1,7 @@
 .max-modal-container{
     width: 100%;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color:  var(--mainColor);
     overflow: auto;
     overflow-x: hidden;
     top:0;
