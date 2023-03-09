@@ -4,7 +4,7 @@ import useThemeService from "../../core/service/themeService";
 import { useRef } from "react";
 
 const linkedinUrl = "https://www.linkedin.com/in/shamin-ali/";
-const githubUrl = "https://github.com/AliShamin"
+const githubUrl = "https://github.com/AliShamin/task-ninja"
 
 function Footer() {
     const themeRef = useRef();
