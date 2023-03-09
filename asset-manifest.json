@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/task-ninja/static/css/main.985e75c7.css",
-    "main.js": "/task-ninja/static/js/main.bbf7d0a5.js",
+    "main.js": "/task-ninja/static/js/main.a2d6ccd1.js",
     "static/js/787.8ceb965d.chunk.js": "/task-ninja/static/js/787.8ceb965d.chunk.js",
     "static/media/todo-icon.png": "/task-ninja/static/media/todo-icon.78241926cc50ea6014e9.png",
     "static/media/task-logo.png": "/task-ninja/static/media/task-logo.c1584aaa8b28d964ae98.png",
     "index.html": "/task-ninja/index.html",
     "main.985e75c7.css.map": "/task-ninja/static/css/main.985e75c7.css.map",
-    "main.bbf7d0a5.js.map": "/task-ninja/static/js/main.bbf7d0a5.js.map",
+    "main.a2d6ccd1.js.map": "/task-ninja/static/js/main.a2d6ccd1.js.map",
     "787.8ceb965d.chunk.js.map": "/task-ninja/static/js/787.8ceb965d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.985e75c7.css",
-    "static/js/main.bbf7d0a5.js"
+    "static/js/main.a2d6ccd1.js"
   ]
 }
