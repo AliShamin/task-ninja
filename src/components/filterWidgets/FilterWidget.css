@@ -3,7 +3,7 @@
 }
 
 #widged-option-container {
-    background-color: aliceblue;
+    background-color: var(--primaryColor);
     color: black;
     width: 8rem;
     height: auto;

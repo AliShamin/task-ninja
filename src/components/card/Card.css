@@ -32,7 +32,7 @@
 #options-container {
     width: fit-content;
     height: auto;
-    background-color: aliceblue;
+    background-color: #F5FFC9;
     position: absolute;
     font-size: small;
     right:0;
@@ -46,7 +46,7 @@
 }
 
 #options-container>div:hover {
-    background-color: lavender;
+    background-color: white;
 }
 
 #options-container>div>span {
