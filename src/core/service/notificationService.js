@@ -27,6 +27,28 @@ function createNotification(title) {
   // want to be respectful there is no need to bother them anymore.
 }
 
+function askNotificationPermission() {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    console.log("This browser does not support notifications.");
+  } else if (checkNotificationPromise()) {
+    Notification.requestPermission().then((permission) => {
+    });
+  } else {
+    Notification.requestPermission((permission) => {
+    });
+  }
+}
+
+function checkNotificationPromise() {
+  try {
+    Notification.requestPermission().then();
+  } catch (e) {
+    return false;
+  }
+  return true;
+}
+
 
 // Check whether the deadline for each task is up or not, and responds appropriately
 function checkDeadlines(reminder) {
@@ -60,4 +82,4 @@ function checkDeadlines(reminder) {
   }
 };
 
-export default checkDeadlines;
+export { askNotificationPermission, checkDeadlines };

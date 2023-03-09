@@ -13,6 +13,7 @@ import { openEditCard } from "../../core/redux/editCardSlice";
 import { useSelector } from "react-redux";
 import { openNotificationModal } from "../../core/redux/modalSlice";
 import useOutsideAlerter from "../../core/helpers/outsideAlerter";
+import { askNotificationPermission } from "../../core/service/notificationService";
 
 
 function Card(props) {
@@ -23,7 +24,7 @@ function Card(props) {
     const ref = useRef(null);
 
     useOutsideAlerter((e) => {
-        if (ref.current!= null && !ref.current.contains(e.target)) { setShowOptions(false) }
+        if (ref.current != null && !ref.current.contains(e.target)) { setShowOptions(false) }
     })
 
     const cardActions = (actionType) => {
@@ -37,7 +38,11 @@ function Card(props) {
         } else if (actionType == 'edit') {
             dispatch(openEditCard(props.data.id))
         } else if (actionType == 'notifyMe') {
-            dispatch(openNotificationModal(props.data))
+            if (Notification.permission === 'granted')
+                dispatch(openNotificationModal(props.data))
+            else{
+                askNotificationPermission();
+            }    
         }
     }
 

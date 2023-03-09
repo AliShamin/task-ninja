@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import { addReminder, deleteReminder } from "../../core/redux/reminderSlice";
 import { useEffect } from "react";
-import checkDeadlines from "../../core/service/notificationService";
+import { checkDeadlines } from "../../core/service/notificationService";
 import { months } from "../../core/constant/dateConstants";
 import { validateReminder } from "../../core/helpers/commonUtil";
 
@@ -32,15 +32,15 @@ function NotificationModal() {
             setShowReminder(false);
             setReminder();
         }
-    }, [notificationModalId,existingReminders])
+    }, [notificationModalId, existingReminders])
 
     const changeReminder = (e) => {
         e.preventDefault();
         setDefaultValues();
-        if(!validateReminder(reminder)){
+        if (!validateReminder(reminder)) {
             setIsInvalidTime(true);
             return;
-        }else{
+        } else {
             setIsInvalidTime(false);
         }
         /**
@@ -87,26 +87,26 @@ function NotificationModal() {
             reminder.year = new Date().getFullYear();
     }
 
-    const daysOptions = ()=>{
+    const daysOptions = () => {
         let options = []
-        for(let i=1;i<=31;i++){
-           options.push(<option key={i} value={i}>{i<10?'0':''}{i}</option>)
+        for (let i = 1; i <= 31; i++) {
+            options.push(<option key={i} value={i}>{i < 10 ? '0' : ''}{i}</option>)
         }
         return options;
     }
 
-    const monthOptions = ()=>{
-        return months.map(e=><option value={e} key={e}>{e}</option>)   
+    const monthOptions = () => {
+        return months.map(e => <option value={e} key={e}>{e}</option>)
     }
 
-    const yearOptions = ()=>{
+    const yearOptions = () => {
         const date = new Date();
         const currentYear = date.getFullYear();
         let options = []
-        for(let i=currentYear;i<currentYear+5;i++){
-           options.push(<option value={i} key={i}>{i}</option>);  
+        for (let i = currentYear; i < currentYear + 5; i++) {
+            options.push(<option value={i} key={i}>{i}</option>);
         }
-        return options;  
+        return options;
     }
 
     return (
@@ -128,12 +128,12 @@ function NotificationModal() {
                                     <div className="d-flex-row box">
                                         <div className="d-flex-row box"><label className="mr-1" >Day:</label>
                                             <select onChange={(e) => { changeReminderAttributes('day', e.target.value) }} required>
-                                             {daysOptions()}
+                                                {daysOptions()}
                                             </select>
                                         </div>
                                         <div className="d-flex-row box"><label className="mr-1" >Month:</label>
                                             <select onChange={(e) => { changeReminderAttributes('month', e.target.value) }} required>
-                                               {monthOptions()}
+                                                {monthOptions()}
                                             </select>
                                         </div>
                                         <div className="d-flex-row box"><label className="mr-1">Year:</label>
@@ -160,7 +160,7 @@ function NotificationModal() {
                                 </div>
                             </div>
                             }
-                            {isInvalidTime && <span style={{'color':'red'}}>Invalid Time!! Pls correct and try again.</span> }
+                            {isInvalidTime && <span style={{ 'color': 'red' }}>Invalid Time!! Pls correct and try again.</span>}
                         </div>
                     </div>
                 </section>
