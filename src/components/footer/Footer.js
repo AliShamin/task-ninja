@@ -14,8 +14,9 @@ function Footer() {
             <div className="d-flex-row space-btw">
                 <span className="mlr8px">Made with &#128151; by Shamin Ali</span>
                 <div className="d-flex-row space-btw">
-                    <a className="mlr8px" href={githubUrl} target='_blank'><BsGithub size='18' /></a>
-                    <a className="mlr8px" href={linkedinUrl} target='_blank'><BsLinkedin size='18' /></a>
+                    <a className="mlr8px" href={githubUrl} target='_blank'>
+                        <BsGithub size='18' color='black' /></a>
+                    <a className="mlr8px" href={linkedinUrl} target='_blank' ><BsLinkedin size='18' color='black'/></a>
                 </div>
             </div>
         </section>

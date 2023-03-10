@@ -16,7 +16,7 @@ function InfoModal() {
             <section className="align-center">
                 <div className="modal-container sticky">
                     <div className="box d-flex-row space-btw">
-                        <h3>About <img id="header_img" src={logo} />Task Ninja</h3>
+                        <h2>About <img id="header_img" src={logo} />Task Ninja</h2>
                         <div onClick={() => dispatch(closeInfoModal())}><AiOutlineCloseCircle size={24} /></div>
                     </div>
                     <div className="box">
