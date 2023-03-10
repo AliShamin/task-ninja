@@ -23,3 +23,5 @@ export const ticketType = [
     "Repository"
 ]
 
+export const INPUT_LIMIT = 100;
+

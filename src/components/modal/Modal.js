@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux'
 import { closeModal } from "../../core/redux/modalSlice";
 import { addCard } from "../../core/redux/cardSlice";
-import { ticketType } from "../../core/constant/constants";
+import { INPUT_LIMIT, ticketType } from "../../core/constant/constants";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useSelector } from 'react-redux'
 import {getDate} from "../../core/helpers/commonUtil";
@@ -44,7 +44,7 @@ function Modal() {
                     <form className="modal-body" onSubmit={addCardItem} >
                         <div className="d-flex-row box">
                             <span className="w30">Card Title</span>
-                            <input placeholder="Enter card title" onChange={(e) => { handleChange("cardTitle", e.target.value) }} required />
+                            <input placeholder="Enter card title" onChange={(e) => { handleChange("cardTitle", e.target.value.slice(0,INPUT_LIMIT))}} required />
                         </div>
                         <div className="d-flex-row box">
                             <span className="w30">Card Type</span>
