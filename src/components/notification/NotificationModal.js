@@ -8,8 +8,9 @@ import { useState } from "react";
 import { addReminder, deleteReminder } from "../../core/redux/reminderSlice";
 import { useEffect } from "react";
 import { checkDeadlines } from "../../core/service/notificationService";
-import { months } from "../../core/constant/dateConstants";
+import { months } from "../../core/constant/constants";
 import { validateReminder } from "../../core/helpers/commonUtil";
+import { invalidEnteredTime } from "../../core/constant/constants";
 
 function NotificationModal() {
     const dispatch = useDispatch();
@@ -160,7 +161,7 @@ function NotificationModal() {
                                 </div>
                             </div>
                             }
-                            {isInvalidTime && <span style={{ 'color': 'red' }}>Invalid Time!! Pls correct and try again.</span>}
+                            {isInvalidTime && <span style={{ 'color': 'red' }}>{invalidEnteredTime}</span>}
                         </div>
                     </div>
                 </section>

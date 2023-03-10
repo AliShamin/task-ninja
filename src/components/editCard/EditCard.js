@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux'
 import { editCard } from '../../core/redux/cardSlice';
-import { ticketType } from "../../core/constant/ticketTypeConstant";
+import { ticketType } from "../../core/constant/constants";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { CgMaximizeAlt } from 'react-icons/cg';
 import { useSelector } from 'react-redux'

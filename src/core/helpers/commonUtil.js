@@ -1,4 +1,4 @@
-import { months } from "../constant/dateConstants";
+import { months } from "../constant/constants";
 
 export const getDate = () => {
     const { day, month, year } = getCurrentTime();

@@ -1,7 +1,7 @@
 import "./Cards.css";
 import Card from "../card/Card";
 import { useSelector } from 'react-redux'
-import { ticketType } from "../../core/constant/ticketTypeConstant";
+import { ticketType } from "../../core/constant/constants";
 import FilterWidget from "../filterWidgets/FilterWidget";
 import { useEffect, useState } from "react";
 import { compareDates } from "../../core/helpers/commonUtil";

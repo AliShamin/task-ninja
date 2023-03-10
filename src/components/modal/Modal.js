@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux'
 import { closeModal } from "../../core/redux/modalSlice";
 import { addCard } from "../../core/redux/cardSlice";
-import { ticketType } from "../../core/constant/ticketTypeConstant";
+import { ticketType } from "../../core/constant/constants";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useSelector } from 'react-redux'
 import {getDate} from "../../core/helpers/commonUtil";
