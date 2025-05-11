@@ -16,11 +16,11 @@ function ExportCards() {
         {label:"IsImp",key:"isImp"},
         {label:"TextData",key:"textData"}
     ]
-    const fileName = "TaskNinja_.csv";
+    const fileName = "TaskNinja_"+ Date.now() + ".csv";
     const csvReport = {
         data:items,
         header:headers,
-        fileName: fileName
+        filename: fileName
     }
     return (
         <>
