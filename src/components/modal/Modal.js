@@ -11,21 +11,21 @@ import uuid from 'react-uuid';
 
 function Modal() {
     const isModalOpen = useSelector((state) => state.modal.isModalOpen)
-    const [currentCardState, setCurrentCardState] = useState({});
+    const [currentCardState, setCurrentCardState] = useState({cardType:ticketType[0]});
     const dispatch = useDispatch();
     const currentDate = getDate();
     const addCardItem = () => {
-        const cardType = currentCardState.cardType ? currentCardState.cardType : ticketType[0]; // set default value
         dispatch(addCard(
             {
                 id: uuid(),
-                cardType: cardType,
+                cardType: currentCardState.cardType,
                 cardTitle: currentCardState.cardTitle,
                 textData: currentCardState.textData,
                 creationDate: currentDate,
                 isImp: false
             }));
         dispatch(closeModal());
+        setCurrentCardState({ ...currentCardState, cardType:ticketType[0]});
     }
 
     const handleChange = (k, v) => {

@@ -23,11 +23,15 @@ export const cardSlice = createSlice({
         deleteCard: (state, action) => {
             state.item = state.item.filter(e => e.id != action.payload) // remove the item with given id
             saveItem('cardItems', state.item);
+        },
+        deleteAllCard: (state, action) => {
+            state.item = []
+            saveItem('cardItems', []);
         }
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { addCard, deleteCard, editCard } = cardSlice.actions
+export const { addCard, deleteCard, deleteAllCard, editCard } = cardSlice.actions
 
 export default cardSlice.reducer

@@ -7,6 +7,8 @@ import InfoButton from "../infoButton/InfoButton";
 import ToggleModeButton from "../toggleModeButton/ToggleModeButton";
 import useThemeService from "../../core/service/themeService";
 import { useRef } from "react";
+import DeleteCardsButton from "../deleteCards/DeleteCardsButton";
+import ExportCards from "../exportCards/ExportCards";
 
 function Header() {
     const themeRef = useRef();
@@ -21,9 +23,11 @@ function Header() {
                     </div>
                 </div>
                 <div className="align-center w30 space-btw">
+                    <ExportCards/>
                     <ToggleModeButton/>
                     <NotificationButton />
                     <Button />
+                    <DeleteCardsButton/>
                     <Avatar />
                     <InfoButton />
                 </div>
