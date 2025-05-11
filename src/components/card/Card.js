@@ -76,7 +76,7 @@ function Card(props) {
                 <section className="d-flex-column" onClick={() => { cardActions('view') }} >
                     <span className="f14 w80">{props.data.cardTitle}</span>
                     <span className="f12">{props.data.creationDate}</span>
-                    <span className="f12">{props.data.cardType}</span>
+                    <span className="f14 fw-medium">{props.data.cardType}</span>
                 </section>
             </section>
         </>

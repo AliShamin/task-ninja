@@ -43,7 +43,7 @@ function ViewCard() {
                         </div>
                     </div>
                     <div className="d-flex-column box">
-                        <span>Mention your content</span>
+                        <span>Description</span>
                         <textarea className="modal-textarea" value={item.textData} spellCheck="false" style={{ caretColor: 'transparent' }} readOnly />
                         <div className="d-flex-row-reverse w100">
                             <CgMaximizeAlt className="cursor-pointer" size='20' onClick={() => { dispatch(openMaxViewModal({ 'isEditable': false })) }} />

@@ -23,13 +23,13 @@ function MaxViewModal(props) {
                     {isEditable ?
                         <form className="max-modal-body" onSubmit={save}>
                             <div className="d-flex-column box">
-                                <span>Your content</span>
+                                <span>Description</span>
                                 <textarea className="max-modal-textarea" defaultValue={props.item.textData} onChange={(e) => { props.item.textData = e.target.value }}  ></textarea>
                             </div>
                         </form> :
                         <div className="max-modal-body">
                             <div className="d-flex-column box">
-                                <span>Your content</span>
+                                <span>Description</span>
                                 <textarea className="max-modal-textarea" defaultValue={props.item.textData} readOnly></textarea>
                             </div>
                         </div>

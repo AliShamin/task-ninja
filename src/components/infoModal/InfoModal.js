@@ -20,7 +20,7 @@ function InfoModal() {
                         <div onClick={() => dispatch(closeInfoModal())}><AiOutlineCloseCircle size={24} /></div>
                     </div>
                     <div className="box">
-                        <p>Task Ninja is created to for all those who feels the need of a Todo app which allows them to manage their todo list along with maintaining the record of most important items used in their day to day use case. </p>
+                        <p>Task Ninja is your smart companion for staying organized — a sleek TODO app that not only helps you manage daily tasks but also keeps a handy record of the essentials you use most often. Stay focused, stay in control.</p>
                         <h3>Basic Features</h3>
                         <ul>
                             <li>Create a ticket</li>
@@ -44,7 +44,7 @@ function InfoModal() {
 
                         </ul>
                         <h3>Where your data will be stored ?</h3>
-                        <p>All of your data will be captured in the browser's LocalStorage. You can close the Task Ninja app and reopen it again and your data will remain persisted until and unless your localstorage is not deleted.</p>
+                        <p>Your data stays with you — always. Task Ninja securely stores all your tasks and important info right in your browser using LocalStorage. Even if you close or refresh the app, everything remains intact — no sign-ups, no servers, no data loss (unless you clear your browser).</p>
                         <h4>Have a Great Day Ahead.. &#128516;</h4>
                     </div>
                 </div>

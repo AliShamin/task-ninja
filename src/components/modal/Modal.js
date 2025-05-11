@@ -63,7 +63,7 @@ function Modal() {
                             </div>
                         </div>
                         <div className="d-flex-column box">
-                            <span>Mention your content</span>
+                            <span>Description</span>
                             <textarea className="modal-textarea" onChange={(e) => { handleChange('textData', e.target.value) }}></textarea>
                         </div>
                         <div className="box">

@@ -62,7 +62,7 @@ function EditCard() {
                             </div>
                         </div>
                         <div className="d-flex-column box">
-                            <span>Mention your content</span>
+                            <span>Add Description</span>
                             <textarea className='modal-textarea' onChange={(e) => { setItem({ ...item, 'textData': e.target.value }) }} value={item.textData}/>
                             <div className="d-flex-row-reverse w100">
                                 <CgMaximizeAlt size='20' onClick={() => { dispatch(openMaxViewModal({ 'isEditable': true })) }} />

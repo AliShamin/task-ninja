@@ -17,15 +17,17 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Cards />
-      <Modal />
-      {isViewCardOpen && <ViewCard />}
-      {showEditCard && <EditCard />}
-      <NotificationModal />
-      <InfoModal />
-      <ExistingNotificationModal />
-      <Footer />
+      <section>
+        <Header />
+        <Cards />
+        <Modal />
+        {isViewCardOpen && <ViewCard />}
+        {showEditCard && <EditCard />}
+        <NotificationModal />
+        <InfoModal />
+        <ExistingNotificationModal />
+        <Footer />
+      </section>
     </div>
   );
 }

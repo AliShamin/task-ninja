@@ -12,11 +12,11 @@ function Footer() {
     return (<>
         <section ref={themeRef} className="footer-box">
             <div className="d-flex-row space-btw">
-                <span className="mlr8px">Made with &#128151; by Shamin Ali</span>
+                <span className="mlr8px">&nbsp;Made with &#128151; by Shamin Ali</span>
                 <div className="d-flex-row space-btw">
-                    <a className="mlr8px" href={githubUrl} target='_blank'>
-                        <BsGithub size='18' color='black' /></a>
-                    <a className="mlr8px" href={linkedinUrl} target='_blank' ><BsLinkedin size='18' color='black'/></a>
+                    {/* {/* <a className="mlr8px" href={githubUrl} target='_blank'>
+                        <BsGithub size='18' color='black' /></a> */}
+                   Reach out to me on Linkedin for feedbacks <a className="mlr8px" href={linkedinUrl} target='_blank' ><BsLinkedin size='18' color='black'/></a>&nbsp;&nbsp;  
                 </div>
             </div>
         </section>

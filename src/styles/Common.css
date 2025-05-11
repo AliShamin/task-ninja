@@ -1,6 +1,6 @@
 :root {
-  --primaryColor:#F5FFC9;
-  --secondaryColor: #ECF2FF;
+  --primaryColor:#fafaf3;
+  --secondaryColor: #E3FCEF;
 }
 
 ::-webkit-scrollbar {
@@ -11,6 +11,13 @@
     border-radius: 4px;
     background-color: rgba(104, 103, 103, 0.5);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.App{
+    display:flex;
+    justify-content: center;
+}
+.App> section{
+    width: 100%;
 }
 
 .align-center {
