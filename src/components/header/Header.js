@@ -9,10 +9,11 @@ import useThemeService from "../../core/service/themeService";
 import { useRef } from "react";
 import DeleteCardsButton from "../deleteCards/DeleteCardsButton";
 import ExportCards from "../exportCards/ExportCards";
+import ImportCards from "../importCards/ImportCards";
 
 function Header() {
     const themeRef = useRef();
-    useThemeService(themeRef);
+    useThemeService(themeRef,'dark-box');
     return (
         <>
             <header ref={themeRef} className="header-container container">
@@ -22,7 +23,8 @@ function Header() {
                         <span id="header-title">Task Ninja</span>
                     </div>
                 </div>
-                <div className="align-center w30 space-btw">
+                <div className="align-center w40 space-btw">
+                    <ImportCards/>
                     <ExportCards/>
                     <ToggleModeButton/>
                     <NotificationButton />

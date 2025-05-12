@@ -33,6 +33,11 @@
     background-color:#f6f6f4;
 }
 
+.card-white-box{
+    background-color: white;
+    color: black;
+}
+
 #options-container {
     width: fit-content;
     height: auto;

@@ -14,6 +14,7 @@ import { useSelector } from "react-redux";
 import { openNotificationModal } from "../../core/redux/modalSlice";
 import useOutsideAlerter from "../../core/helpers/outsideAlerter";
 import { askNotificationPermission } from "../../core/service/notificationService";
+import useThemeService from "../../core/service/themeService";
 
 
 function Card(props) {
@@ -22,7 +23,9 @@ function Card(props) {
     const [isCardImp, setIsCardImp] = useState(props.data.isImp);
     const viewCardId = useSelector(state => state.viewCard.cardId);
     const ref = useRef(null);
-
+    const themeRef = useRef();
+    useThemeService(themeRef,'card-white-box');   
+   
     useOutsideAlerter((e) => {
         if (ref.current != null && !ref.current.contains(e.target)) { setShowOptions(false) }
     })
@@ -57,7 +60,7 @@ function Card(props) {
 
     return (
         <>
-            <section className="card-container" key={props.data.id}>
+            <section ref={themeRef} className="card-container" key={props.data.id}>
                 <header className="d-flex-row space-btw">
                     <FaUserNinja />
                     <div className="d-flex-row space-btw w30">

@@ -8,7 +8,7 @@ const githubUrl = "https://github.com/AliShamin/task-ninja"
 
 function Footer() {
     const themeRef = useRef();
-    useThemeService(themeRef);
+    useThemeService(themeRef,'dark-box');
     return (<>
         <section ref={themeRef} className="footer-box">
             <div className="d-flex-row space-btw">

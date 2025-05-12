@@ -14,7 +14,7 @@ function Cards() {
     const filters = useSelector((state) => state.filter.items);
     const [filteredItems, setFilteredItems] = useState(items);
     const themeRef = useRef();
-    useThemeService(themeRef);   
+    useThemeService(themeRef,'dark-box');   
     useEffect(() => {
         applyFiltersIfAny();
     }, [filters])

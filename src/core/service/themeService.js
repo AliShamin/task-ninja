@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
-function useThemeService(themeRef) {
+function useThemeService(themeRef, appliedClass) {
     const isDarkMode = useSelector((state) => state.modal.isDarkMode);
 
     useEffect(() => {
         if (isDarkMode) {
-            themeRef.current.classList.add('dark-box');
+            themeRef.current.classList.add(appliedClass);
         } else {
-            themeRef.current.classList.remove('dark-box');
+            themeRef.current.classList.remove(appliedClass);
         }
     }, [isDarkMode])
     return ;

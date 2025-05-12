@@ -12,6 +12,10 @@ export const cardSlice = createSlice({
             state.item.push(action.payload);
             saveItem('cardItems', state.item);
         },
+        addAllCards: (state, action) => {
+            state.item = [...state.item,...action.payload];
+            saveItem('cardItems', state.item);
+        },
         editCard: (state, action) => {
           const editItem =  state.item.find(e => e.id==action.payload.id);
           editItem.cardTitle = action.payload.cardTitle;
@@ -32,6 +36,6 @@ export const cardSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { addCard, deleteCard, deleteAllCard, editCard } = cardSlice.actions
+export const { addCard, addAllCards, deleteCard, deleteAllCard, editCard } = cardSlice.actions
 
 export default cardSlice.reducer
