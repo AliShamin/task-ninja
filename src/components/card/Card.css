@@ -30,7 +30,8 @@
     margin:0.2rem 0rem;
     padding:  0.2rem 0rem;
     font-weight: 500;
-    background-color:#f6f6f4;
+    background-color:#f0f0ef;
+    border-radius: 0.8rem;
 }
 
 .card-white-box{

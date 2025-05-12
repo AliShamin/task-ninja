@@ -23,7 +23,7 @@ function ViewCard() {
             <div className="modal-container sticky">
                 <div className="box d-flex-row space-btw">
                     <h3>Card Details</h3>
-                    <div onClick={() => dispatch(closeViewCard())}><AiOutlineCloseCircle size={24} /></div>
+                    <div onClick={() => dispatch(closeViewCard())} className='cursor-pointer'><AiOutlineCloseCircle size={24} /></div>
                 </div>
                 <div className="modal-body">
                     <div className="d-flex-row box">

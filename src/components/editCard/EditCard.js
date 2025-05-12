@@ -34,7 +34,7 @@ function EditCard() {
                 <div className="modal-container sticky">
                     <div className="box d-flex-row space-btw">
                         <h3>Edit card details</h3>
-                        <div onClick={() => dispatch(closeEditCard())}><AiOutlineCloseCircle size={24} /></div>
+                        <div onClick={() => dispatch(closeEditCard())} className='cursor-pointer'><AiOutlineCloseCircle size={24} /></div>
                     </div>
                     <div className="modal-body">
                         <div className="d-flex-row box">

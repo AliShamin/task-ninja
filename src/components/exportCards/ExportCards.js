@@ -27,8 +27,7 @@ function ExportCards() {
     return (
         <>
             <div className='cursor-pointer align-center plr1' data-tooltip-id="toggle-tooltip" data-tooltip-content="Export Cards in .csv">
-               
-                <CSVLink data={csvReport.data} filename={csvReport.filename} style={{color:'inherit'}}><FaDownload size='18' onClick={handleClick} /></CSVLink>
+            <CSVLink data={csvReport.data} filename={csvReport.filename} style={{ color: 'inherit' }} className={items.length === 0 ? "disabled-link":""}><FaDownload size='18' onClick={handleClick} /></CSVLink>
             </div>
             <Tooltip id='toggle-tooltip' />
         </>
