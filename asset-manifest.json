@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/task-ninja/static/css/main.7dbf67b2.css",
-    "main.js": "/task-ninja/static/js/main.84a6234d.js",
-    "static/js/787.8ceb965d.chunk.js": "/task-ninja/static/js/787.8ceb965d.chunk.js",
-    "static/media/todo-icon.png": "/task-ninja/static/media/todo-icon.78241926cc50ea6014e9.png",
-    "static/media/task-logo.png": "/task-ninja/static/media/task-logo.c1584aaa8b28d964ae98.png",
-    "index.html": "/task-ninja/index.html",
-    "main.7dbf67b2.css.map": "/task-ninja/static/css/main.7dbf67b2.css.map",
-    "main.84a6234d.js.map": "/task-ninja/static/js/main.84a6234d.js.map",
-    "787.8ceb965d.chunk.js.map": "/task-ninja/static/js/787.8ceb965d.chunk.js.map"
+    "main.css": "/static/css/main.7dbf67b2.css",
+    "main.js": "/static/js/main.980fad3e.js",
+    "static/js/787.8ceb965d.chunk.js": "/static/js/787.8ceb965d.chunk.js",
+    "static/media/todo-icon.png": "/static/media/todo-icon.78241926cc50ea6014e9.png",
+    "static/media/task-logo.png": "/static/media/task-logo.c1584aaa8b28d964ae98.png",
+    "index.html": "/index.html",
+    "main.7dbf67b2.css.map": "/static/css/main.7dbf67b2.css.map",
+    "main.980fad3e.js.map": "/static/js/main.980fad3e.js.map",
+    "787.8ceb965d.chunk.js.map": "/static/js/787.8ceb965d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dbf67b2.css",
-    "static/js/main.84a6234d.js"
+    "static/js/main.980fad3e.js"
   ]
 }
