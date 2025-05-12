@@ -2,7 +2,7 @@
   "name": "notebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alishamin.github.io/task-ninja",
+  "homepage": "https://www.taskninja.live",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,6 +15,7 @@
     "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
+    "react-snap": "^1.23.0",
     "react-tooltip": "^5.8.3",
     "react-uuid": "^2.0.0",
     "redux": "^4.2.1",
@@ -26,7 +27,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "postbuild": "react-snap"
+  },
+  "reactSnap": {
+    "inlineCss": true
   },
   "eslintConfig": {
     "extends": [
