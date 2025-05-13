@@ -1,34 +1,17 @@
 import "./styles/Common.css";
 import 'react-tooltip/dist/react-tooltip.css'
-import Header from "./components/header/Header";
-import Modal from "./components/modal/Modal";
-import ViewCard from "./components/viewCard/ViewCard";
-import EditCard from "./components/editCard/EditCard";
-import Cards from "./components/cards/Cards";
-import NotificationModal from "./components/notification/NotificationModal";
-import ExistingNotificationModal from "./components/notification/ExistingNotificationModal";
-import Footer from "./components/footer/Footer";
-import InfoModal from "./components/infoModal/InfoModal";
-import { useSelector } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './pages/About';
+import Home from "./pages/Home";
 
 function App() {
-  const showEditCard = useSelector((state) => state.editCard.showEditCard)
-  const isViewCardOpen = useSelector(state => state.viewCard.showViewCard)
-
   return (
-    <div className="App">
-      <section>
-        <Header />
-        <Cards />
-        <Modal />
-        {isViewCardOpen && <ViewCard />}
-        {showEditCard && <EditCard />}
-        <NotificationModal />
-        <InfoModal />
-        <ExistingNotificationModal />
-        <Footer />
-      </section>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} /> {/* Add About route */}
+      </Routes>
+    </Router>
   );
 }
 

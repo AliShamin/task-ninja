@@ -1,16 +1,15 @@
 import { CgInfo } from "react-icons/cg";
 import { Tooltip } from 'react-tooltip'
-import { openInfoModal } from "../../core/redux/modalSlice";
-import { useDispatch } from "react-redux";
+import { Link } from 'react-router-dom';
 
 function InfoButton() {
-    const dispatch = useDispatch();
     return (
         <>
-            <CgInfo size='20' className="mlr8px cursor-pointer" data-tooltip-id="my-info" data-tooltip-content="Info" 
-            onClick={()=>{dispatch(openInfoModal())}}/>
+         <Link to="/about">
+            <CgInfo size='20' className="mlr8px cursor-pointer" data-tooltip-id="my-info" data-tooltip-content="Info"/>
             <Tooltip id="my-info"/>
-        </>
+         </Link> {/* Link to About Page */}
+         </>
     )
 }
 

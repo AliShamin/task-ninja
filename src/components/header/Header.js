@@ -31,7 +31,7 @@ function Header() {
                     <Button />
                     <DeleteCardsButton/>
                     <Avatar />
-                    <InfoButton />
+                    <InfoButton/>
                 </div>
             </header>
         </>
