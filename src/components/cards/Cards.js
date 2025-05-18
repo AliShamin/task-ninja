@@ -62,8 +62,8 @@ function Cards() {
 
     return (
         <>
-            <section ref={themeRef} className="align-center d-flex-column bg-grey">
-                <div className="cards-container ">
+            <section ref={themeRef} className="align-center d-flex-column bg-grey cards-container ">
+                <div className="p1 w80">
                     <div className="d-flex-row space-btw">
                         {ticketType.map(e =>
                             <div className="w15" key={e}>
@@ -71,7 +71,7 @@ function Cards() {
                             </div>)
                         }
                     </div>
-                    <div className="d-flex-row space-btw" id="card-items-box">
+                    <div className="d-flex-row space-btw card-items-box">
                         {items.length > 0 ?
                             ticketType.map(e =>
                                 <div className="d-flex-column w15" key={e}>

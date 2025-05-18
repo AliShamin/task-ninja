@@ -1,6 +1,6 @@
 .cards-container {
-    padding: 1rem;
-    width: 80%;
+    /* padding: 1rem; */
+    margin-top:5rem;
 }
 
 .cards-title{
@@ -9,17 +9,17 @@
 }
 
 #card-header {
-    padding: .4rem 0.4rem;
+    padding: .4rem 0.8rem;
     margin: 0rem 0rem 0.3rem 0rem;
     letter-spacing: 0.1rem;
     /* border-bottom: 5px solid aliceblue; */
-    width: 88%;
+    width: 80%;
     font-weight: 500;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: .6rem;
 }
 
-#card-items-box {
+.card-items-box {
      min-height: 82vh;
     /* overflow: auto; */
 }

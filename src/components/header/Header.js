@@ -13,25 +13,27 @@ import ImportCards from "../importCards/ImportCards";
 
 function Header() {
     const themeRef = useRef();
-    useThemeService(themeRef,'dark-box');
+    useThemeService(themeRef, 'dark-box');
     return (
         <>
-            <header ref={themeRef} className="header-container container">
-                <div className="align-center space-btw w100">
-                    <div className="d-flex-row font-style-1 plr2">
-                        <img id="header_img" src={logo} />
-                        <span id="header-title">Task Ninja</span>
+            <header ref={themeRef} className="header-container container sticky align-center ">
+                <div className="w80 d-flex-row align-center space-btw">
+                    <div className="align-center space-btw">
+                        <div className="d-flex-row font-style-1 plr2">
+                            <img id="header_img" src={logo} />
+                            <span id="header-title">Task Ninja</span>
+                        </div>
                     </div>
-                </div>
-                <div className="align-center w40 space-btw">
-                    <ImportCards/>
-                    <ExportCards/>
-                    {/* <ToggleModeButton/> */}
-                    <NotificationButton />
-                    <Button />
-                    <DeleteCardsButton/>
-                    <Avatar />
-                    <InfoButton/>
+                    <div className="align-center w40 space-btw">
+                        <ImportCards />
+                        <ExportCards />
+                        {/* <ToggleModeButton/> */}
+                        <NotificationButton />
+                        <Button />
+                        <DeleteCardsButton />
+                        <Avatar />
+                        <InfoButton />
+                    </div>
                 </div>
             </header>
         </>

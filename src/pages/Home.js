@@ -1,6 +1,7 @@
 import Cards from "../components/cards/Cards"
 import EditCard from "../components/editCard/EditCard"
 import EmptyBucketStatus from "../components/emptyBucketStatus/EmptyBucketStatus"
+import FeatureGrid from "../components/featureGrid/FeatureGrid"
 import Footer from "../components/footer/Footer"
 import Header from "../components/header/Header"
 import InfoModal from "../components/infoModal/InfoModal"
@@ -19,6 +20,7 @@ const Home = () => {
                 <Header />
                 <Cards />
                 <InfoModal />
+                <FeatureGrid/>
                 <Modal />
                 {isViewCardOpen && <ViewCard />}
                 {showEditCard && <EditCard />}
