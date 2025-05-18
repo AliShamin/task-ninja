@@ -124,6 +124,10 @@
     width: 100%;
 }
 
+.bg-grey{
+    /* background-color: #f9f9f9; */
+    background-image: radial-gradient(circle, #00c2f7, #9198e5);
+}
 
 /**
    Custom Fonts size
@@ -209,8 +213,8 @@ select{
 }
 
 .about-container {
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 5rem;
+  background-color: white;
   border-radius: 8px;
   max-width: 800px;
   margin: 20px auto;

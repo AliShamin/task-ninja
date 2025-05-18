@@ -26,7 +26,7 @@ function Header() {
                 <div className="align-center w40 space-btw">
                     <ImportCards/>
                     <ExportCards/>
-                    <ToggleModeButton/>
+                    {/* <ToggleModeButton/> */}
                     <NotificationButton />
                     <Button />
                     <DeleteCardsButton/>

@@ -14,7 +14,7 @@ function Cards() {
     const filters = useSelector((state) => state.filter.items);
     const [filteredItems, setFilteredItems] = useState(items);
     const themeRef = useRef();
-    useThemeService(themeRef,'dark-box');   
+    useThemeService(themeRef, 'dark-box');
     useEffect(() => {
         applyFiltersIfAny();
     }, [filters])
@@ -62,22 +62,24 @@ function Cards() {
 
     return (
         <>
-            <section ref={themeRef} className="cards-container d-flex-column">
-                <div className="d-flex-row space-btw">
-                    {ticketType.map(e =>
-                        <div className="w15" key={e}>
-                            <header id="card-header" className="f12 d-flex-row space-btw">{e.toUpperCase()}<FilterWidget cardType={e} /></header>
-                        </div>)
-                    }
-                </div>
-                <div className="d-flex-row space-btw" id="card-items-box">
-                    {items.length > 0 ?
-                        ticketType.map(e =>
-                            <div className="d-flex-column w15" key={e}>
-                                {filteredItems.map(i => (i.cardType == e && <Card data={i} key={i.id} />))}
-                            </div>) :
-                        <EmptyBucketStatus />
-                    }
+            <section ref={themeRef} className="align-center d-flex-column bg-grey">
+                <div className="cards-container ">
+                    <div className="d-flex-row space-btw">
+                        {ticketType.map(e =>
+                            <div className="w15" key={e}>
+                                <header id="card-header" className="f12 d-flex-row space-btw">{e.toUpperCase()}<FilterWidget cardType={e} /></header>
+                            </div>)
+                        }
+                    </div>
+                    <div className="d-flex-row space-btw" id="card-items-box">
+                        {items.length > 0 ?
+                            ticketType.map(e =>
+                                <div className="d-flex-column w15" key={e}>
+                                    {filteredItems.map(i => (i.cardType == e && <Card data={i} key={i.id} />))}
+                                </div>) :
+                            <EmptyBucketStatus />
+                        }
+                    </div>
                 </div>
             </section>
         </>

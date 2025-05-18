@@ -1,20 +1,31 @@
 .cards-container {
     padding: 1rem;
+    width: 80%;
+}
+
+.cards-title{
+    background-color: white;
+
 }
 
 #card-header {
     padding: .4rem 0.4rem;
     margin: 0rem 0rem 0.3rem 0rem;
     letter-spacing: 0.1rem;
-    border-bottom: 5px solid aliceblue;
+    /* border-bottom: 5px solid aliceblue; */
     width: 88%;
     font-weight: 500;
+    background-color: white;
+    border-radius: 1rem;
 }
 
 #card-items-box {
-    height: 78vh;
-    overflow: auto;
+     min-height: 82vh;
+    /* overflow: auto; */
 }
+
+
+
 
 
 

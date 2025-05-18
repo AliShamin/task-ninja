@@ -1,5 +1,6 @@
 import Cards from "../components/cards/Cards"
 import EditCard from "../components/editCard/EditCard"
+import EmptyBucketStatus from "../components/emptyBucketStatus/EmptyBucketStatus"
 import Footer from "../components/footer/Footer"
 import Header from "../components/header/Header"
 import InfoModal from "../components/infoModal/InfoModal"
@@ -17,11 +18,11 @@ const Home = () => {
             <section>
                 <Header />
                 <Cards />
+                <InfoModal />
                 <Modal />
                 {isViewCardOpen && <ViewCard />}
                 {showEditCard && <EditCard />}
                 <NotificationModal />
-                <InfoModal />
                 <ExistingNotificationModal />
                 <Footer />
             </section>

@@ -1,6 +1,6 @@
 .card-container {
     max-height: 20rem;
-    background-color:  var(--secondaryColor);
+    background-color:  white;
     margin: .2rem 0.5rem 0.3rem 0rem;
     padding:.6rem;
     position:relative;
