@@ -36,8 +36,7 @@ const FeatureGrid = () => {
           >
             <div>{feature.icon}</div>
             <div>
-              <h4 className="f16">{feature.title}</h4>
-              <p className="f14">{feature.desc}</p>
+              <p className="feature-detail"><strong>{feature.title}</strong> {feature.desc}</p>
             </div>
           </div>
         ))}

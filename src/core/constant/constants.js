@@ -15,12 +15,11 @@ export const months = [
 ]
 export const ticketType = [
     "Todo List",
-    "Document",
+    "Documents",
     "Code",
-    "Recording",
-    "Secret",
-    "Link",
-    "Repository"
+    "Recordings",
+    "Secrets",
+    "Links"
 ]
 
 export const INPUT_LIMIT = 100;

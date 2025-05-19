@@ -6,7 +6,10 @@
 
 .cards-title {
     background-color: white;
+}
 
+.cards-container > div{
+    border-radius: 0.6rem;
 }
 
 #card-header {

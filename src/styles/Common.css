@@ -245,12 +245,10 @@ select{
 
 .about-container h1 {
   font-size: 2rem;
-  color: #333;
 }
 
 .about-container p {
   font-size: 1rem;
-  color: #666;
   line-height: 1.6;
 }
 
@@ -276,4 +274,18 @@ select{
 
 .options-container>div>span {
     margin: 0rem 0.3rem;
+}
+
+.feature-detail{
+    color: #707070;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 130%;
+    display: flex;
+}
+
+strong{
+    font-weight: bold;
 }

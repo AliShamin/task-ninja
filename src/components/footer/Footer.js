@@ -10,7 +10,7 @@ function Footer() {
     const themeRef = useRef();
     useThemeService(themeRef,'dark-box');
     return (<>
-        <footer ref={themeRef} className="footer-box align-center bg-grey">
+        <footer ref={themeRef} className="footer-box align-center">
             <div className="d-flex-row space-btw w80">
                 <span>&nbsp;Made with &#128151; by Shamin Ali</span>
                 <div className="d-flex-row space-btw">

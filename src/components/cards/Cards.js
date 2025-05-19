@@ -62,8 +62,8 @@ function Cards() {
 
     return (
         <>
-            <section ref={themeRef} className="align-center bg-grey cards-container">
-                <div className="p1 w80">
+            <section ref={themeRef} className="align-center cards-container">
+                <div className="p1 w80 bg-grey p2">
                     <div className="d-flex-row space-btw">
                         {ticketType.map(e =>
                             <div className="w15" key={e}>
@@ -71,10 +71,10 @@ function Cards() {
                             </div>)
                         }
                     </div>
-                    <div className="card-items-box">
+                    <div className="d-flex-row space-btw card-items-box">
                         {items.length > 0 ?
                             ticketType.map(e =>
-                                <div key={e}>
+                                <div className="w15"  key={e}>
                                     {filteredItems.map(i => (i.cardType == e && <Card data={i} key={i.id} />))}
                                 </div>) :
                             <EmptyBucketStatus />
