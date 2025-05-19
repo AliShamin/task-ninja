@@ -18,3 +18,11 @@
   height: 25px;
   margin-right: 10px;
 }
+
+
+/* Hide on small screens (mobile) */
+@media (max-width: 768px) {
+  #header-nav-items {
+    display: none;
+  }
+}

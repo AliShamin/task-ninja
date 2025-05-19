@@ -2,7 +2,7 @@ import "./Button.css";
 import { useDispatch } from 'react-redux'
 import { openModal } from "../../core/redux/modalSlice";
 import { Tooltip } from "react-tooltip";
-function Button() {
+function CreateTicket() {
     const dispatch = useDispatch()
     return (
         <>
@@ -14,4 +14,4 @@ function Button() {
     )
 }
 
-export default Button;
+export default CreateTicket;

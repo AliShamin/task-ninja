@@ -7,7 +7,7 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { IoMdNotifications } from "react-icons/io";
 import { deleteCard, editCard } from "../../core/redux/cardSlice";
 import { useDispatch } from "react-redux";
-import { useEffect, useState, ref, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { openViewCard, closeViewCard } from "../../core/redux/viewCardSlice";
 import { openEditCard } from "../../core/redux/editCardSlice";
 import { useSelector } from "react-redux";
@@ -15,7 +15,6 @@ import { openNotificationModal } from "../../core/redux/modalSlice";
 import useOutsideAlerter from "../../core/helpers/outsideAlerter";
 import { askNotificationPermission } from "../../core/service/notificationService";
 import useThemeService from "../../core/service/themeService";
-
 
 function Card(props) {
     const dispatch = useDispatch();
@@ -67,7 +66,7 @@ function Card(props) {
                         {isCardImp ? <AiFillStar color='gold' onClick={() => { setIsCardImp(false) }} size='18' /> : <AiOutlineStar onClick={() => { setIsCardImp(true) }} size='18' />}
                         <div onClick={handelOptionsClick}>
                             <VscListSelection />
-                            {showOptions && <div id="options-container" ref={ref}>
+                            {showOptions && <div className="options-container" ref={ref}>
                                 <div onClick={() => { cardActions('edit') }}><MdModeEdit /><span>Edit</span></div>
                                 <div onClick={() => { cardActions('notifyMe') }}><IoMdNotifications /><span>Notify</span></div>
                                 <div onClick={() => { cardActions('delete') }}><MdDelete /><span>Delete</span></div>

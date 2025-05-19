@@ -52,3 +52,14 @@
     outline: none;
     border: none;
 }
+
+/* Hide on small screens (mobile) */
+@media (max-width: 768px) {
+.modal-container{
+    width: 66%;
+ }
+
+ .modal-body > div{
+    flex-direction: column;
+ }
+}
