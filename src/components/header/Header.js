@@ -31,15 +31,15 @@ function Header() {
                         </div>
                     </div>
                     <div className="space-btw d-flex-row align-center">
-                        <div className="align-center" id="header-nav-items">
+                        {/* <div className="align-center" id="header-nav-items">
                             <ImportCards />
                             <ExportCards />
                             <NotificationButton />
                             <CreateTicket />
                             <DeleteCardsButton />
-                            <Avatar />
-                        </div>
-                        <InfoButton />
+                        </div> */}
+                         <Avatar />
+                        {/* <InfoButton /> */}
                     </div>
                 </div>
             </header>

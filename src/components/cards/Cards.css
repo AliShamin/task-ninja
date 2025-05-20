@@ -1,7 +1,5 @@
 .cards-container {
-    /* padding: 1rem; */
     margin-top: 5rem;
-    min-width: 100vw;
 }
 
 .cards-title {
@@ -34,13 +32,23 @@
     min-width: 15%;
 }
 
+#tools-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .8rem;
+}
+
 /* Hide on small screens (mobile) */
 @media (max-width: 768px) {
     .cards-container>div>div:nth-of-type(1) {
         display: none;
     }
-
     .cards-container>div>div:nth-of-type(2) {
+        display: none;
+    }
+
+    .cards-container>div>div:nth-of-type(3) {
         display: flex;
         flex-direction: column;
         justify-content: center;

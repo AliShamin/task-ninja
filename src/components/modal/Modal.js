@@ -39,7 +39,7 @@ function Modal() {
                 <div className="modal-container sticky">
                     <div className="box d-flex-row space-btw">
                         <h3>Enter card details</h3>
-                        <div onClick={() => dispatch(closeModal())}><AiOutlineCloseCircle size={24} /></div>
+                        <div onClick={() => dispatch(closeModal())} className="cursor-pointer"><AiOutlineCloseCircle size={24} /></div>
                     </div>
                     <form className="modal-body" onSubmit={addCardItem} >
                         <div className="d-flex-row box">

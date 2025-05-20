@@ -8,6 +8,11 @@ import { compareDates } from "../../core/helpers/commonUtil";
 import EmptyBucketStatus from "../emptyBucketStatus/EmptyBucketStatus";
 import { useRef } from "react";
 import useThemeService from "../../core/service/themeService";
+import ImportCards from "../importCards/ImportCards";
+import ExportCards from "../exportCards/ExportCards";
+import NotificationButton from "../notificationButton/NotificationButton";
+import CreateTicket from "../button/CreateTicket";
+import DeleteCardsButton from "../deleteCards/DeleteCardsButton";
 
 function Cards() {
     const items = useSelector((state) => state.card.item);
@@ -63,7 +68,14 @@ function Cards() {
     return (
         <>
             <section ref={themeRef} className="align-center cards-container">
-                <div className="p1 w80 bg-grey p2">
+                <div className="w80 bg-grey p2">
+                    <div id="tools-box" >
+                        <CreateTicket />
+                        <ImportCards />
+                        <ExportCards />
+                        <NotificationButton />
+                        <DeleteCardsButton />
+                    </div>
                     <div className="d-flex-row space-btw">
                         {ticketType.map(e =>
                             <div className="w15" key={e}>
@@ -74,7 +86,7 @@ function Cards() {
                     <div className="d-flex-row space-btw card-items-box">
                         {items.length > 0 ?
                             ticketType.map(e =>
-                                <div className="w15"  key={e}>
+                                <div key={e}>
                                     {filteredItems.map(i => (i.cardType == e && <Card data={i} key={i.id} />))}
                                 </div>) :
                             <EmptyBucketStatus />

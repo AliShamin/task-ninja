@@ -1,0 +1,9 @@
+#dashboard-button{
+    background-color: var(--primaryColor);
+    border-radius: 1rem;
+}
+
+#dashboard-button:hover{
+    box-shadow: 0 4px 8px rgba(9, 30, 66, 0.1);
+   
+} 
