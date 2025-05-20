@@ -1,5 +1,4 @@
 import "./MaxViewModal.css";
-import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux'
 import { closeMaxViewModal } from "../../core/redux/modalSlice";
 import { BiArrowBack } from "react-icons/bi";
@@ -15,7 +14,7 @@ function MaxViewModal(props) {
 
     return (
         <>
-            <section className="align-center">
+            <section className="align-center mt10">
                 <div className="max-modal-container sticky">
                     <div className="box d-flex-row space-btw">
                         <div onClick={() => dispatch(closeMaxViewModal())}><BiArrowBack className="cursor-pointer" size={24} /></div>
