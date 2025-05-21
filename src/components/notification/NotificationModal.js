@@ -120,7 +120,7 @@ function NotificationModal() {
                             <div>
                                 <div className="box d-flex-row space-btw">
                                     <h3>Add Notification</h3>
-                                    <div onClick={closeModal}><AiOutlineCloseCircle size={24} /></div>
+                                    <div onClick={closeModal}><AiOutlineCloseCircle size={24} className="cursor-pointer" /></div>
                                 </div>
                                 <form className="modal-body" onSubmit={changeReminder}>
                                     <div className="d-flex-row box"><label className="w20" >Task title:</label><input defaultValue={notificationTitle} onChange={(e) => { changeReminderAttributes('title', e.target.value) }} className="w80" type="text" id="title" required /></div>

@@ -1,6 +1,6 @@
 import "./styles/Common.css";
 import 'react-tooltip/dist/react-tooltip.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";

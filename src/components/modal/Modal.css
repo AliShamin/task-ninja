@@ -3,7 +3,7 @@
     height: auto;
     max-height: 75%;
     background-color:  var(--primaryColor);
-    top:12%;
+    top:15%;
     overflow: auto;
     overflow-x: hidden;
     border-radius: 5px;
