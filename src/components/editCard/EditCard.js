@@ -25,7 +25,7 @@ function EditCard() {
     }
 
     const saveTextData = (text) => {
-       setItem({...item,'textData':text})
+        setItem({ ...item, 'textData': text })
     }
 
     return (
@@ -63,7 +63,7 @@ function EditCard() {
                         </div>
                         <div className="d-flex-column box">
                             <span>Add Description</span>
-                            <textarea className='modal-textarea' onChange={(e) => { setItem({ ...item, 'textData': e.target.value }) }} value={item.textData}/>
+                            <textarea className='modal-textarea' onChange={(e) => { setItem({ ...item, 'textData': e.target.value }) }} value={item.textData} />
                             <div className="d-flex-row-reverse w100">
                                 <CgMaximizeAlt size='20' onClick={() => { dispatch(openMaxViewModal({ 'isEditable': true })) }} />
                             </div>

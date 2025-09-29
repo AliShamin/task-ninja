@@ -24,7 +24,8 @@ export const modalSlice = createSlice({
     },
     reducers: {
         switchToDarkMode: (state) => {
-            state.isDarkMode = true;
+            // state.isDarkMode = true;
+            state = {...state,isDarkMode:true}
             saveItem('isDarkMode', true);
         },
         switchToLightMode: (state) => {
